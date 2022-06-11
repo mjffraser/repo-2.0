@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTM Repository</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+
+</head>
+<body>
+    <section class="head">
+        <nav>
+            <a href="index.html" class="nav-home">HOME</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="popmap.html">POPULAR MAPS</a></li>
+                    <li><a href="search.html">SEARCH</a></li>
+                    <li><a href="submit.html">MAP SUBMISSION</a></li>
+                    <li><a href="https://discord.com/invite/ctmc">DISCORD</a></li>
+                    <li><a href="">SUPPORT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+        </nav>
+
+        <div class="logo-img"><img src="assets/images/logo.png"></div>
+        <div class="featuredMap"><h1>Featured Map</h1>
+            <i class="fa fa-chevron-down fa-5x"></i>
+
+        </div>
+        <div class="randomMap"><h1>Random Map</h1>
+            <i class="fa fa-chevron-down fa-5x"></i>
+
+        </div>
+
+    </section>
+
+    <!---featured map and random map-->
+
+    <section class="homeMaps">
+        
+    </section>
+    
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function openMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function closeMenu() {
+            navLinks.style.right = "-55vw";
+        }
+
+    </script>
+
+
+</body>
+</html>
